@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прощание с Вишневыми Аллеями</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            background: linear-gradient(135deg, #6D001A 0%, #B90032 40%, #FF6B97 100%);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 700px;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.5s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.8em;
+            margin-bottom: 25px;
+            color: #FFDDE1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        
+        p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #f0f0f0;
+        }
+
+        .server-name {
+            font-weight: bold;
+            color: #FFC0CB;
+        }
+
+        .farewell-message {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border-left: 4px solid #FF758C;
+        }
+
+        .placeholder-text {
+            font-style: italic;
+            color: #FFDDE1;
+            padding: 10px;
+            border: 1px dashed #FFB6C1;
+            border-radius: 8px;
+            margin-top: 25px;
+            background-color: rgba(0,0,0,0.2);
+        }
+
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 0.95em;
+            }
+            .container {
+                padding: 20px 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="farewellContainer">
+        <h1>Прощайте, <span class="server-name">Вишневые Аллеи</span>!</h1>
+        
+        <p>Эти два года на сервере были для меня особенными. Я хочу выразить огромную благодарность каждому из вас.</p>
+        
+        <div class="farewell-message">
+            <p>Для меня было настоящей честью дружить с вами, разделять радости, смех и поддерживать друг друга. Время, проведенное здесь, останется теплым воспоминанием в моем сердце.</p>
+            <p>Я многому научился и встретил замечательных людей<!-- Кроме Славы (шучу) -->. Спасибо что вы прошли мой мини ивент! Спасибо за все!</p>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9em; color: #FFDDE1;"><em>С наилучшими пожеланиями, <br> Rocker7003</em></p>
+    </div>
+
+    <script>
+        
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('farewellContainer');
+            
+            
+            const heading = document.querySelector('h1');
+            if (heading) {
+                heading.addEventListener('mouseover', () => {
+                    
+                });
+                heading.addEventListener('mouseout', () => {
+                    
+                });
+            }
+            console.log("Страница загружена и готова.");
+        });
+    </script>
+</body>
+</html>
